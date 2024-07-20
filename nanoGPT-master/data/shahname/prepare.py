@@ -23,7 +23,7 @@ val_data = data[int(n * 0.9):]
 # Initialize tokenizer
 tokenizer = AutoTokenizer.from_pretrained(
     "CohereForAI/aya-23-35B",
-    use_auth_token="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")
+    use_auth_token="hf_ffYTQbLIvtvjvUHgXoPsBISYKRocDrQSmLPw")
 
 # Encode data
 train_ids = tokenizer.encode(train_data, add_special_tokens=False)
