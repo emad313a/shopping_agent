@@ -8,7 +8,7 @@ num_guests = 24
 num_seats = 24
 confilictcount = 40
 
-guesnamelist = ["jeme","zahra","tome","stiv","fati","javad","ston","mahdi","sobhan","tohid","esi","tiyam","messi","ashor","nahid","ziba","mijica","ana","ali","ayoub","solmaz","sabori","mohsa","sohyla"]
+guesnamelist = ["Ali", "Alavi","tome","stiv","fati","javad","ston","mahdi","sobhan","tohid","esi","tiyam","messi","ashor","nahid","ziba","mijica","ana","ali","ayoub","solmaz","sabori","mohsa","sohyla"]
 space = [" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "]
 gaslistname1 = np.random.choice(guesnamelist,24)
 gaslistname2 =  np.random.choice(guesnamelist,24)
@@ -158,3 +158,5 @@ def train_model(model, num_epochs=1000, learning_rate=0.001):
 
 model = SeatingModel(num_guests, num_seats)
 train_model(model, num_epochs=2000)
+
+# Best Loss: 0.13555394113063812
