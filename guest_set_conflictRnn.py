@@ -9,7 +9,7 @@ from torch.nn import functional as F
 NUM_GUESTS = 24
 NUM_SEATS = 24
 CONFLICT_COUNT = 40
-guest_names = ["jeme", "zahra", "tome", "stiv", "fati", "javad", "ston", "mahdi", "sobhan", "tohid", 
+guest_names = ["Ali", "Alavi", "tome", "stiv", "fati", "javad", "ston", "mahdi", "sobhan", "tohid", 
     "esi", "tiyam", "messi", "ashor", "nahid", "ziba", "mijica", "ana", "ali", "ayoub", 
     "solmaz", "sabori", "mohsa", "sohyla"]
 
@@ -101,3 +101,4 @@ def train_model(model, num_epochs=1000, learning_rate=0.001):
 
 model = SeatingModel(NUM_GUESTS, NUM_SEATS)
 train_model(model, num_epochs=2000)
+# Best Lost: 0.16691936552524567
